@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Admi Mohammed</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Admi Mohammed</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-4 fw-bold mb-4 animated-text">Bonjour, je suis <span class="highlight">Admi Mohammed</span></h1>
+                    <h2 class="mb-4">Étudiant en 4ème année Génie Informatique</h2>
+                    <p class="lead mb-5">Développeur full-stack passionné par la création d'applications web/mobile performantes et d'écosystèmes logiciels collaboratifs.</p>
+                    <div class="button-container">
+                        <a href="#contact" class="btn btn-primary me-3">Me contacter</a>
+                        <a href="#projects" class="btn btn-outline-dark">Voir mes projets</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="profile-img-container">
+                        <img src="media/moi.jpg" alt="Photo de profil" class="img-fluid rounded-circle shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="media/moi2.jpg" alt="Photo professionnelle" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="mb-4">Qui suis-je ?</h3>
+                    <p class="lead mb-4">Étudiant ingénieur en Génie Informatique à l'ENSAO, spécialisé dans le développement full-stack et l'architecture logicielle.</p>
+                    <p class="mb-4">Grâce à mon parcours académique et mes projets pratiques, j'ai acquis des compétences techniques solides tout en développant une approche créative et analytique. Passionné par l'innovation, je mets un point d'honneur à concevoir des solutions logicielles robustes qui répondent aux besoins complexes des utilisateurs.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-user-graduate fs-4 me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0">Formation</h5>
+                                    <p class="mb-0">Génie Informatique</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt fs-4 me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0">Localisation</h5>
+                                    <p class="mb-0">Oujda, Maroc</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope fs-4 me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0">Email</h5>
+                                    <p class="mb-0">mohammed.admi23@ump.ac.ma</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-laptop-code fs-4 me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0">Intérêts</h5>
+                                    <p class="mb-0">Développement Web & Mobile, IA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="media/CV.pdf" class="btn btn-primary me-2">Télécharger mon CV</a>
+                        <a href="#contact" class="btn btn-outline-dark">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Mes compétences</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3 class="mb-4">Compétences techniques</h3>
+                
+                    <!-- Développement Web Full-Stack -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="fw-bold">Développement Web Full-Stack</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">HTML5/CSS3 • JavaScript (ES6+) • React • Symfony • PHP • Bootstrap</small>
+                    </div>
+                
+                    <!-- Langages de Programmation -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="fw-bold">Langages Orientés Objet</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">Java • C++ • C# • Python</small>
+                    </div>
+                
+                    <!-- Bases de Données & Cloud -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="fw-bold">Bases de Données & Cloud</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">MySQL • SQLite • Firebase</small>
+                    </div>
+                
+                    <!-- Outils & Méthodologies -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="fw-bold">Ingénierie Logicielle</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">UML • Git • Linux • Méthodes Agile</small>
+                    </div></div>
+                
+                    <div class="col-md-6">
+                        <h3 class="mb-4">Compétences personnelles</h3>
+                        <div class="row">
+                            <!-- Compétences interpersonnelles -->
+                            <div class="col-6 mb-4">
+                                <div class="skill-item text-center p-4 rounded shadow-sm">
+                                    <i class="fas fa-people-arrows fs-1 mb-3 text-primary"></i>
+                                    <h5>Écoute active</h5>
+                                </div>
+                            </div>
+                           
+                            <div class="col-6 mb-4">
+                                <div class="skill-item text-center p-4 rounded shadow-sm">
+                                    <i class="fas fa-users fs-1 mb-3 text-primary"></i>
+                                    <h5>Travail en équipe</h5>
+                                </div>
+                            </div>
+                    
+                            <!-- Qualités personnelles -->
+                           
+                            <div class="col-6 mb-4">
+                                <div class="skill-item text-center p-4 rounded shadow-sm">
+                                    <i class="fas fa-clock fs-1 mb-3 text-primary"></i>
+                                    <h5>Ponctualité</h5>
+                                </div>
+                            </div>
+                           
+                            <div class="col-6 mb-4">
+                                <div class="skill-item text-center p-4 rounded shadow-sm">
+                                    <i class="fas fa-balance-scale fs-1 mb-3 text-primary"></i>
+                                    <h5>Contrôle de soi</h5>
+                                </div>
+                            </div>
+                    
+                            <!-- Compétences organisationnelles -->
+                            <div class="col-6 mb-4">
+                                <div class="skill-item text-center p-4 rounded shadow-sm">
+                                    <i class="fas fa-hourglass-half fs-1 mb-3 text-primary"></i>
+                                    <h5>Gestion du temps</h5>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="skill-item text-center p-4 rounded shadow-sm">
+                                    <i class="fas fa-lightbulb fs-1 mb-3 text-primary"></i>
+                                    <h5>Esprit d'initiative</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+<section id="certifications" class="py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Certifications</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Certification 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card certification-card h-100 ">
+                    <div class="card-header bg-white border-0">
+                        <img src="media/greatlearning.png" alt="Certification Google Cloud" class="img-fluid rounded-top">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-award text-warning me-2 fs-4"></i>
+                            <h5 class="mb-0">React JS Tutorial</h5>
+                        </div>
+                        <p class="text-muted">Certification professionnelle sur les concepts fondamentaux de React.js.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">Great Learning</span>
+                            <small class="text-muted">2024</small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a href="media/Admi MohammedGreatlearning.pdf" class="btn btn-sm btn-outline-primary">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Certification 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card certification-card h-100 ">
+                    <div class="card-header bg-white border-0">
+                        <img src="media/cisco.png" alt="Certification Udemy" class="img-fluid rounded-top">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-award text-warning me-2 fs-4"></i>
+                            <h5 class="mb-0">CCNAv7: Introduction aux réseaux</h5>
+                        </div>
+                        <p class="text-muted">Formation certifiante sur les fondamentaux réseaux (commutation, routage, IPv4/IPv6 et sécurité).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">Cisco Networking Academy</span>
+                            <small class="text-muted">2024</small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a href="media/MOHAMMEDADMI-Introduction to -certificate.pdf" class="btn btn-sm btn-outline-primary">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification 3 -->
+             <!--
+            <div class="col-md-6 col-lg-4">
+                <div class="card certification-card h-100 border-0 shadow-sm">
+                    <div class="card-header bg-white border-0">
+                        <img src="media/certif-agile.png" alt="Certification Agile" class="img-fluid rounded-top">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-scrum text-success me-2 fs-4"></i>
+                            <h5 class="mb-0">Méthodologies Agile</h5>
+                        </div>
+                        <p class="text-muted">Scrum Master et gestion de projet agile.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Scrum.org</span>
+                            <small class="text-muted">2023</small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Mes projets</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="media/AnimaLove.png" class="card-img-top" alt="Projet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">AnimaLove</h5>
+                            <p class="card-text">Plateforme de consultation et gestion des annonces d'animaux à adopter.</p>
+                            <p class="tech-stack"><small class="text-muted">Symfony, Twig, JavaScript, CSS, Bootstrap, MySQL, UML</small></p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="media/demoAnimaLove.mp4" class="btn btn-sm btn-outline-primary me-2">Démo</a>
+                            <a href="https://github.com/AdmiMohammed/Animalove" class="btn btn-sm btn-outline-dark">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="media/quiz.png" class="card-img-top" alt="Projet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">QuizQuest</h5>
+                            <p class="card-text">Application Android d'un quiz multijoueur.</p>
+                            <p class="tech-stack"><small class="text-muted">Java, XML, Firebase, UML</small></p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="media/demoquiz.mp4" class="btn btn-sm btn-outline-primary me-2">Démo</a>
+                            <a href="https://github.com/AdmiMohammed/quizquest" class="btn btn-sm btn-outline-dark">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="media/petshop.png" class="card-img-top" alt="Projet 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Pet Shop</h5>
+                            <p class="card-text">Développement d'une application de commerce en ligne : Conception, Réalisation et Gestion des Services</p>
+                            <p class="tech-stack"><small class="text-muted">JEE, HTML, JavaScript, CSS, Boostrap, MySQL, UML</small></p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="media/demopetshop.mp4" class="btn btn-sm btn-outline-primary me-2">Démo</a>
+                            <a href="https://github.com/AdmiMohammed/petshop" class="btn btn-sm btn-outline-dark">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="media/flotmax.png" class="card-img-top" alt="Projet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">MaxFlow Visualizer</h5>
+                            <p class="card-text">Implémentation de l'algorithme de Ford-Fulkerson pour l'optimisation des flux de réseaux.</p>
+                            <p class="tech-stack"><small class="text-muted">Python, Flask, React, CSS, Bootstrap, UML</small></p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="media/demoflotmax.mp4" class="btn btn-sm btn-outline-primary me-2">Démo</a>
+                            <a href="https://github.com/AdmiMohammed/Maxflot" class="btn btn-sm btn-outline-dark">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="media/stage.png" class="card-img-top" alt="Projet 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Stage d’initiation</h5>
+                            <p class="card-text">Conception et réalisation complète d'un site web institutionnel pour le département de communication de l'Université Hassan II Ben M'Sik de Casablanca.</p>
+                            <p class="tech-stack"><small class="text-muted">PHP, HTML, JavaScript, CSS, Bootstrap, MySQL, UML</small></p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="media/demostage.mp4" class="btn btn-sm btn-outline-primary me-2">Démo</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-5 bg-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Me contacter</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+        </div>
+
+        <!-- Conteneur pour centrer la carte -->
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="contact-info">
+                    <div class="mb-4">
+                        <h4>Coordonnées</h4>
+                        <p class="text-muted">Prêt à collaborer ? Contactez-moi pour discuter de vos projets et transformer vos idées en solutions innovantes.</p>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-map-marker-alt text-primary me-3 fs-5"></i>
+                        <div>
+                            <h5 class="mb-1">Adresse</h5>
+                            <p class="text-muted mb-0">Oujda, Maroc</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-envelope text-primary me-3 fs-5"></i>
+                        <div>
+                            <h5 class="mb-1">Email</h5>
+                            <p class="text-muted mb-0">mohammed.admi23@ump.ac.ma</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <i class="fas fa-phone text-primary me-3 fs-5"></i>
+                        <div>
+                            <h5 class="mb-1">Téléphone</h5>
+                            <p class="text-muted mb-0">+212770571676</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h5 class="mb-3">Réseaux sociaux</h5>
+                        <a href="https://www.linkedin.com/in/mohammed-admi-538b39268/" class="btn btn-outline-dark me-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/AdmiMohammed" class="btn btn-outline-dark me-2">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/med_admi_2388/" class="btn btn-outline-dark">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h4 class="mb-1">Admi Mohammed</h4>
+                    <p class="mb-0 text-muted">Développeur Full-Stack et Étudiant en Génie Informatique</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.linkedin.com/in/mohammed-admi-538b39268/" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AdmiMohammed" class="text-white me-3"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/med_admi_2388/" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <p class="mt-2 mb-0 text-muted">&copy;2023 - Portfolio Professionnel | Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personnalisé -->
+    <script src="js/script.js"></script>
+</body>
+</html>
