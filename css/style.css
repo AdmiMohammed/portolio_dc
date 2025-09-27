@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0d6efd;
+    --primary-color: #08C5D1;
     --secondary-color: #343a40;
     --light-color: #f8f9fa;
     --dark-color: #212529;
@@ -129,7 +129,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%; /* Crée un cercle */
-    background-color: rgba(13, 110, 253, 0.1); /* Couleur semi-transparente */
+    background: linear-gradient(10deg, #051C24, #08C5D1);/* Couleur semi-transparente */
     top: 0; /* Aligné avec le haut du conteneur */
     left: 0; /* Aligné avec la gauche du conteneur */
     z-index: -1; /* Place l'effet derrière l'image */
@@ -145,6 +145,9 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ajoute une ombre élégante */
     margin: 0; /* Supprime toute marge inutile */
 }
+
+
+
 /* ABOUT SECTION */
 #about .skill-item {
     transition: var(--transition);
@@ -334,12 +337,12 @@ body {
     text-decoration: none;
     transition: var(--transition);
 }
-
+/*
 .certification-card .card-footer a:hover {
     color: white;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-}
+}*/
 
 .certification-card .fa-award {
     animation: bounce 2s infinite;
@@ -357,4 +360,84 @@ body {
     .profile-img-container {
         max-width: 300px; /* Réduit la taille de l'image sur mobile */
     }
+}
+
+
+.btn-outline-primary {
+    color: #08C5D1;
+    border-color: #08C5D1;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #08C5D1;
+    border-color: #08C5D1;
+}
+
+.btn-outline-dark {
+    color: #051C24;
+    border-color: #051C24;
+}
+
+.btn-outline-dark:hover {
+    color: white;
+    background-color: #051C24 !important;
+    border-color: #051C24 !important;
+}
+
+/* Bouton principal (plein) */
+.btn-primary1 {
+    background-color: #08C5D1;
+    border-color: #08C5D1;
+    color: white;
+}
+
+.btn-primary1:hover {
+    background:#059aa3;
+    border-color: #059aa3;
+    color: white;
+}
+
+
+/* NAVBAR */
+.navbar {
+    transition: var(--transition);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #051C24 !important; /* Couleur pour le nom */
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: #6c757d !important; /* Gris pour les liens inactifs */
+}
+
+.nav-link.active {
+    color: #051C24 !important; /* Couleur pour l'onglet actif */
+}
+
+.nav-link:hover {
+    color: #051C24 !important; /* Couleur au survol */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
 }
