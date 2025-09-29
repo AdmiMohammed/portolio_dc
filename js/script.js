@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Ajouter la classe pour l'animation au scroll
-    document.querySelectorAll('.project-card, .skill-item, #about p, .certification-card , .contact-info').forEach(element => {
+    document.querySelectorAll('.project-card, .skill-item, #about p, .certification-card , .techskill1 , .techskill2 , .techskill3 , .techskill4 , .techskill5 ,.contact-info').forEach(element => {
         element.classList.add('animate-on-scroll');
     });
     

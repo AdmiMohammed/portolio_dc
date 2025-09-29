@@ -51,103 +51,6 @@ body {
     }
 }
 
-/* NAVBAR */
-.navbar {
-    transition: var(--transition);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-}
-
-.nav-link {
-    position: relative;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: var(--primary-color);
-    transition: var(--transition);
-    transform: translateX(-50%);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 70%;
-}
-
-/* HERO SECTION */
-/* HERO SECTION */
-#hero {
-    background-color: var(--light-color);
-    position: relative;
-    padding-top: 80px;
-}
-
-.row {
-    margin: 0; /* Supprime les marges par défaut de Bootstrap */
-}
-
-.col-lg-6 {
-    padding: 0; /* Supprime les paddings par défaut de Bootstrap */
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-}
-
-/* Alignement des éléments dans la colonne */
-.col-lg-6.d-flex.flex-column.justify-content-center {
-    align-items: flex-start; /* Force l'alignement vers la gauche */
-}
-
-/* Conteneur des boutons */
-.button-container {
-    text-align: left; /* Alignement des boutons vers la gauche */
-    margin-left: 0; /* Supprime toute marge inutile */
-}
-
-.profile-img-container {
-    position: relative;
-    max-width: 400px; /* Taille maximale du conteneur */
-    width: 100%; /* Remplit la colonne */
-    margin: 0 auto; /* Centre horizontalement */
-    z-index: 1;
-    padding: 0; /* Supprime tout padding inutile */
-}
-
-.profile-img-container::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; /* Crée un cercle */
-    background: linear-gradient(10deg, #051C24, #08C5D1);/* Couleur semi-transparente */
-    top: 0; /* Aligné avec le haut du conteneur */
-    left: 0; /* Aligné avec la gauche du conteneur */
-    z-index: -1; /* Place l'effet derrière l'image */
-    transform: scale(1.1); /* Réduit légèrement l'effet pour éviter un espace supplémentaire */
-}
-
-.profile-img-container img {
-    display: block;
-    width: 100%; /* Remplit le conteneur */
-    height: auto; /* Conserve les proportions */
-    border-radius: 50%; /* Image circulaire */
-    object-fit: cover; /* Assure que l'image reste proportionnelle */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ajoute une ombre élégante */
-    margin: 0; /* Supprime toute marge inutile */
-}
-
-
-
 /* ABOUT SECTION */
 #about .skill-item {
     transition: var(--transition);
@@ -374,6 +277,21 @@ body {
     border-color: #08C5D1;
 }
 
+.btn-outline-primary:focus {
+    background:#059aa3;
+    border-color: #059aa3;
+    color: white;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+    background-color: #059aa3 !important;
+    border-color: #059aa3 !important;
+}
+
 .btn-outline-dark {
     color: #051C24;
     border-color: #051C24;
@@ -383,6 +301,12 @@ body {
     color: white;
     background-color: #051C24 !important;
     border-color: #051C24 !important;
+}
+
+.btn-outline-dark:focus,
+.btn-outline-dark:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /* Bouton principal (plein) */
@@ -398,6 +322,20 @@ body {
     color: white;
 }
 
+.btn-primary1:focus {
+    background:#059aa3;
+    border-color: #059aa3;
+    color: white;
+}
+
+.btn-primary1:focus,
+.btn-primary1:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+    background-color: #059aa3 !important;
+    border-color: #059aa3 !important;
+}
 
 /* NAVBAR */
 .navbar {
@@ -440,4 +378,390 @@ body {
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 70%;
+}
+
+/* Supprimer le border du bouton navbar-toggler */
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: rgba(5, 28, 36, 0.3) !important;
+}
+
+/* Changer la couleur du bouton navbar-toggler en #051C24 */
+.navbar-toggler {
+    border-color: rgba(5, 28, 36, 0.3) !important;
+}
+
+.navbar-toggler:hover {
+    border-color: rgba(5, 28, 36, 0.6) !important;
+}
+
+/* Changer la couleur de l'icône du navbar-toggler */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(5, 28, 36, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* HERO SECTION - CORRECTIONS */
+#hero {
+    background-color: var(--light-color);
+    position: relative;
+    padding-top: 80px;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-lg-6 {
+    padding: 1rem; /* Réajoute un padding pour l'espacement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Alignement des éléments dans la colonne */
+.col-lg-6.d-flex.flex-column.justify-content-center {
+    align-items: flex-start;
+}
+
+/* Conteneur des boutons */
+.button-container {
+    text-align: left;
+    margin-left: 0;
+}
+
+.profile-img-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 0; /* Ajoute du padding pour l'espacement */
+}
+
+.profile-img-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(10deg, #051C24, #08C5D1);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+.profile-img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+/* RESPONSIVE CORRECTIONS POUR LA SECTION HERO */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .profile-img-container {
+        max-width: 350px; /* Réduit légèrement sur tablette */
+        margin: 2rem auto 0; /* Ajoute de l'espace au-dessus */
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    #hero h1 {
+        font-size: 2rem;
+    }
+    
+    #hero {
+        text-align: center;
+        padding-top: 100px; /* Plus d'espace en haut sur mobile */
+        min-height: auto; /* Permet une hauteur flexible */
+        padding-bottom: 2rem; /* Espace en bas */
+    }
+    
+    .profile-img-container {
+        max-width: 280px; /* Plus petit sur mobile */
+        margin: 1.5rem auto; /* Centre avec espace */
+        order: -1; /* Place l'image au-dessus du texte sur mobile si nécessaire */
+    }
+    
+    /* Force l'alignement centré sur mobile */
+    .col-lg-6.d-flex.flex-column.justify-content-center {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .button-container {
+        text-align: center;
+    }
+    
+    /* Réduit les marges sur mobile */
+    #hero .display-4 {
+        margin-bottom: 1rem !important;
+    }
+    
+    #hero .lead {
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-img-container {
+        max-width: 250px; /* Encore plus petit sur très petits écrans */
+    }
+    
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    #hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    #hero .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Assure que les colonnes s'empilent correctement */
+@media (max-width: 768px) {
+    #hero .row {
+        flex-direction: column;
+    }
+    
+    #hero .col-lg-6:first-child {
+        order: 2; /* Texte en deuxième position */
+    }
+    
+    #hero .col-lg-6:last-child {
+        order: 1; /* Image en première position */
+    }
+}
+
+
+
+#hero {
+    background-color: var(--light-color);
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 2rem; /* Ajoute un padding en bas pour éviter la coupure */
+}
+
+.profile-img-container {
+    position: relative;
+    max-width: 325px; /* Taille maximale de l'image */
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .profile-img-container {
+        max-width: 300px; /* Réduit la taille de l'image pour les largeurs intermédiaires */
+    }
+    
+    #hero .col-lg-6 {
+        padding: 1.5rem; /* Ajoute un padding pour l'espacement */
+    }
+    
+    #hero .row {
+        align-items: center; /* Centre verticalement les colonnes */
+    }
+}
+
+#about .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #about .col-md-5 {
+        max-width: 40%; /* Réduit la largeur de la colonne de l'image */
+        flex: 0 0 40%;
+    }
+    
+    #about .col-md-7 {
+        flex: 0 0 60%; /* Ajuste la largeur de la colonne de texte */
+    }
+    
+    #about img {
+        max-height: 300px; /* Limite la hauteur de l'image */
+        object-fit: cover;
+    }
+}
+
+#skills .row {
+    row-gap: 1.5rem; /* Ajoute un espacement entre les lignes */
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #skills .col-md-6 {
+        padding: 0 1rem; /* Ajoute un padding pour éviter les chevauchements */
+    }
+    
+    .skill-item {
+        padding: 1rem; /* Réduit le padding des cartes pour mieux s'adapter */
+    }
+}
+
+.certification-card .card-header img {
+    width: 100%;
+    height: 150px; /* Hauteur fixe pour uniformité */
+    object-fit: cover; /* Assure que l'image remplit l'espace sans déformation */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .certification-card {
+        margin-bottom: 1.5rem; /* Ajoute un espacement entre les cartes */
+    }
+    
+    .certification-card .card-header img {
+        height: 120px; /* Réduit la hauteur des images pour les largeurs intermédiaires */
+    }
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .project-card {
+        margin-bottom: 1.5rem; /* Ajoute un espacement entre les cartes */
+    }
+    
+    .card-img-top {
+        height: 180px; /* Réduit légèrement la hauteur des images */
+    }
+}
+
+.contact-info {
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px; /* Augmente légèrement la largeur maximale */
+    width: 100%;
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .contact-info {
+        max-width: 90%; /* Utilise plus d'espace pour les largeurs intermédiaires */
+        padding: 1.5rem; /* Réduit légèrement le padding */
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        max-width: 90%; /* Utilise plus d'espace pour les largeurs intermédiaires */
+    }
+    
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    [class*="col-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Section À propos */
+#about .row.mt-4 {
+    row-gap: 1rem; /* Ajoute un espacement vertical entre les lignes */
+}
+
+#about .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne les éléments à gauche */
+}
+
+#about .d-flex {
+    width: 100%; /* Assure que chaque bloc prend toute la largeur de la colonne */
+    align-items: flex-start; /* Aligne les éléments verticalement */
+}
+
+#about .d-flex p {
+    overflow-wrap: break-word; /* Permet au texte long (comme l'email) de se couper */
+    word-break: break-word; /* Coupe les mots longs si nécessaire */
+    max-width: 100%; /* Limite la largeur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #about .col-md-6 {
+        padding: 0 10px; /* Ajoute un padding pour éviter les chevauchements */
+    }
+    
+    #about .d-flex p {
+        font-size: 0.9rem; /* Réduit légèrement la taille du texte pour les largeurs intermédiaires */
+    }
+}
+
+/* Section Contact */
+.contact-info .d-flex {
+    width: 100%; /* Assure que chaque bloc prend toute la largeur disponible */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+}
+
+.contact-info p {
+    overflow-wrap: break-word; /* Permet au texte long (comme l'email) de se couper */
+    word-break: break-word; /* Coupe les mots longs si nécessaire */
+    max-width: 100%; /* Limite la largeur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .contact-info {
+        max-width: 80%; /* Réduit légèrement la largeur maximale pour mieux s'adapter */
+        padding: 1.5rem; /* Maintient un padding raisonnable */
+    }
+    
+    .contact-info p {
+        font-size: 0.9rem; /* Réduit la taille du texte pour éviter le débordement */
+    }
+}
+
+/* Placeholder pour les images en lazy loading */
+img[loading="lazy"] {
+    background-color: #f0f0f0; /* Couleur de fond temporaire */
+    min-height: 100px; /* Hauteur minimale pour éviter le saut de contenu */
+}
+
+/* Pour les images des certifications */
+.certification-card .card-header img[loading="lazy"] {
+    min-height: 150px; /* Correspond à la hauteur définie */
+}
+
+/* Pour les images des projets */
+.card-img-top[loading="lazy"] {
+    min-height: 200px; /* Correspond à la hauteur définie */
 }
